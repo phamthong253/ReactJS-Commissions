@@ -1,0 +1,25 @@
+@tailwind base;
+
+@layer base {
+  html {
+    @apply text-neutral-800;
+  }
+  html.dark {
+    @apply text-neutral-50;
+    @apply bg-neutral-800;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Montserrat Alternates', sans-serif;
+  /* font-family: 'Outfit', sans-serif; */
+}
+h5{
+  font-family: 'Concert One', cursive;
+}
+.square{
+    border: 1px solid;
+}
