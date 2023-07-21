@@ -53,7 +53,7 @@ export default function Signin() {
       } catch (error) {
         setShowFailModal(true);
         setTimeout(() => setShowFailModal(false), 3000);
-        console.error(error.response);
+        console.log(error.response.data);
       } finally {
         setLoading(false);
         setSubmitting(false);
