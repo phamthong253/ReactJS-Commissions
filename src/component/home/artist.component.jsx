@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 export default function Artist() {
   return (
     <div
-      className="mt-28 lg:flex flex-auto justify-between max-w-full lg:my-48 lg:px-40 px-14"
+      className="mt-28 lg:flex flex-auto justify-between max-w-full lg:mt-48 lg:px-40 px-14"
       id="artist"
     >
       <div className="lg:flex lg:flex-1 lg:flex-col lg:mr-5 mb-7">
