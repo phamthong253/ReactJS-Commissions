@@ -53,19 +53,30 @@ function Collection() {
   const handleImageClick = (image) => {
     setSelectedImage(image);
     setSelectedIndex(infoList.length);
+    setSelectedIndex(sample.length);
     setShowModal(true);
   };
 
   const handlePrevClick = () => {
-    const newIndex = (selectedIndex - 1 + infoList.length) % infoList.length;
-    setSelectedImage(infoList[newIndex].imageSrc);
-    setSelectedIndex(newIndex);
-  };
+      const newIndex2 = (selectedIndex - 1 + sample.length) % sample.length;
+      setSelectedImage(sample[newIndex2].imgSrc);
+      setSelectedIndex(newIndex2);
+      if (infoList) {
+        const newIndex = (selectedIndex - 1 + infoList.length) % infoList.length;
+        setSelectedImage(infoList[newIndex].imageSrc);
+        setSelectedIndex(newIndex);
+      }
+  }
 
   const handleNextClick = () => {
-    const newIndex = (selectedIndex + 1) % infoList.length;
-    setSelectedImage(infoList[newIndex].imageSrc);
-    setSelectedIndex(newIndex);
+      const newIndex2 = (selectedIndex + 1) % sample.length;
+      setSelectedImage(sample[newIndex2].imgSrc);
+      setSelectedIndex(newIndex2);
+      if (infoList) {
+        const newIndex = (selectedIndex + 1) % infoList.length;
+        setSelectedImage(infoList[newIndex].imageSrc);
+        setSelectedIndex(newIndex);
+      }
   };
   return (
     <div
@@ -92,27 +103,6 @@ function Collection() {
                 </div>
               </div>
             ))}
-            <div>
-              {showModal ? (
-                <>
-                  <div className="justify-center ease-out duration-1000 items-center flex overflow-x-hidden overflow-y-hidden fixed inset-0 z-50 outline-none focus:outline-none">
-                    <div className="relative w-auto my-16 mx-auto max-w-xl transition-all ">
-                      <img className="object-cover" src={selectedImage} />
-                    </div>
-                      <div className="close fixed top-5 right-10 cursor-pointer" onClick={() => setShowModal(false)}>
-                        <GrClose/>
-                      </div>
-                      <div className="prev fixed left-0 cursor-pointer" onClick={handlePrevClick}>
-                        <GrPrevious/>
-                      </div>
-                      <div className="next fixed right-0 cursor-pointer" onClick={handleNextClick}>
-                        <GrNext/>
-                      </div>
-                  </div>
-                  <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
-                </>
-              ) : null}
-            </div>
           </>
         ) : (
           <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
@@ -133,6 +123,36 @@ function Collection() {
             </div>
           </div>
         )}
+        <div>
+          {showModal && (
+            <>
+              <div className="justify-center ease-out duration-1000 items-center flex overflow-x-hidden overflow-y-hidden fixed inset-0 z-50 outline-none focus:outline-none">
+                <div className="relative w-auto my-16 mx-auto max-w-xl transition-all ">
+                  <img className="object-cover" src={selectedImage} />
+                </div>
+                <div
+                  className="close fixed top-5 right-10 cursor-pointer"
+                  onClick={() => setShowModal(false)}
+                >
+                  <GrClose />
+                </div>
+                <div
+                  className="prev fixed left-0 cursor-pointer"
+                  onClick={handlePrevClick}
+                >
+                  <GrPrevious />
+                </div>
+                <div
+                  className="next fixed right-0 cursor-pointer"
+                  onClick={handleNextClick}
+                >
+                  <GrNext />
+                </div>
+              </div>
+              <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
