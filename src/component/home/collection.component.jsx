@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import instance from "../../interceptor/axios";
 import useAuth from "../hooks/useAuth.component";
-import {GrPrevious, GrNext, GrClose} from "react-icons/gr"
+import { GrPrevious, GrNext, GrClose } from "react-icons/gr";
 
 function Collection() {
   const { auth } = useAuth();
@@ -11,38 +11,38 @@ function Collection() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const sample = [
     {
-    id: 1,
-    imgSrc: "/image/halfbody2.jpeg" 
-  },
+      id: 1,
+      imgSrc: "/image/halfbody2.jpeg",
+    },
     {
-    id: 2,
-    imgSrc: "/image/halfbody4.jpeg" 
-  },
+      id: 2,
+      imgSrc: "/image/halfbody4.jpeg",
+    },
     {
-    id: 3,
-    imgSrc: "/image/halfbody8.jpeg" 
-  },
+      id: 3,
+      imgSrc: "/image/halfbody8.jpeg",
+    },
     {
-    id: 4,
-    imgSrc: "/image/halfbody9.png" 
-  },
+      id: 4,
+      imgSrc: "/image/halfbody9.png",
+    },
     {
-    id: 5,
-    imgSrc: "/image/halfbody11.jpg" 
-  },
+      id: 5,
+      imgSrc: "/image/halfbody11.jpg",
+    },
     {
-    id: 6,
-    imgSrc: "/image/halfbody12.jpg" 
-  },
+      id: 6,
+      imgSrc: "/image/halfbody12.jpg",
+    },
     {
-    id: 7,
-    imgSrc: "/image/halfbody14.jpg" 
-  },
+      id: 7,
+      imgSrc: "/image/halfbody14.jpg",
+    },
     {
-    id: 8,
-    imgSrc: "/image/halfbody13.jpg" 
-  },
-]
+      id: 8,
+      imgSrc: "/image/halfbody13.jpg",
+    },
+  ];
 
   useEffect(() => {
     instance.get("/commission").then((response) => {
@@ -107,19 +107,21 @@ function Collection() {
         ) : (
           <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
             <div className="-m-1 flex flex-wrap md:-m-2">
+            <hr className="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+            <span className="absolute w-60 px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
+              Artist Sample
+            </span>
               {sample.map((item) => (
-              <div
-              key={item.id}
-               className="flex w-1/3 flex-wrap">
-                <div className="w-full p-1 md:p-2">
-                  <img
-                    onClick={() => handleImageClick(item.imgSrc)}
-                    alt="gallery"
-                    className="block h-full w-full rounded-lg object-cover object-center"
-                    src={item.imgSrc}
-                  />
+                <div key={item.id} className="flex w-1/3 flex-wrap">
+                  <div className="w-full p-1 md:p-2">
+                    <img
+                      onClick={() => handleImageClick(item.imgSrc)}
+                      alt="gallery"
+                      className="block h-full w-full rounded-lg object-cover object-center cursor-pointer"
+                      src={item.imgSrc}
+                    />
+                  </div>
                 </div>
-              </div>
               ))}
             </div>
           </div>

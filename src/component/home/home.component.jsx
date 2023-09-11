@@ -18,13 +18,13 @@ function Home() {
           <br />
           <div className="text-center w-full md:px-60 md:my-32 my-12 py-12 max-w-screen-2xl justify-around">
             <h2 className="text-purple-500 text-6xl font-bold leading-[4.5rem]">
-              {auth ? (
+              {auth && (
                 <p className="text-gray-700 inline-block">
                   {" "}
                   Hello {localStorage.getItem("username")},
                 </p>
-              ) : null}{" "}
-              Welcome to React CRUD Commission
+              )}{" "}
+              Welcome to Hanyonn Commission
             </h2>
             <br />
             <p className="text-xl ">

@@ -7,11 +7,11 @@ export default function ArtistComm() {
 
   const [showImage, setShowImage] = useState(0);
   const images = [
-    { id: 1, imageSrc: "/image/fullbody2.jpg" },
-    { id: 2, imageSrc: "/image/fullbody3.jpg" },
+    { id: 1, imageSrc: "/image/fullbody6.jpeg" },
+    { id: 2, imageSrc: "/image/halfbody15.jpg" },
     { id: 3, imageSrc: "/image/fullbody4.jpg" },
-    { id: 4, imageSrc: "/image/fullbody5.jpg" },
-    { id: 5, imageSrc: "/image/fullbody7.jpg" },
+    { id: 4, imageSrc: "/image/halfbody16.jpg" },
+    { id: 5, imageSrc: "/image/halfbody17.jpg" },
   ];
   const handleNextClick = () => {
     const lastImages = showImage === images.length - 1;
@@ -79,7 +79,7 @@ export default function ArtistComm() {
             <div className="w-full lg:w-1/2 px-4">
               <div className="max-w-lg">
                 <h2 className="text-4xl font-black mb-1">
-                  Full Body Commission
+                  Sample Commission
                 </h2>
                 <span className="block text-sm font-bold mb-5">Hanyonn</span>
                 <div className="flex items-center mb-4">
