@@ -7,11 +7,11 @@ export default function ArtistComm() {
 
   const [showImage, setShowImage] = useState(0);
   const images = [
-    { id: 1, imageSrc: "/image/fullbody2.jpg" },
-    { id: 2, imageSrc: "/image/fullbody3.jpg" },
+    { id: 1, imageSrc: "/image/fullbody6.jpeg" },
+    { id: 2, imageSrc: "/image/halfbody15.jpg" },
     { id: 3, imageSrc: "/image/fullbody4.jpg" },
-    { id: 4, imageSrc: "/image/fullbody5.jpg" },
-    { id: 5, imageSrc: "/image/fullbody7.jpg" },
+    { id: 4, imageSrc: "/image/halfbody16.jpg" },
+    { id: 5, imageSrc: "/image/halfbody17.jpg" },
   ];
   const handleNextClick = () => {
     const lastImages = showImage === images.length - 1;
@@ -79,7 +79,7 @@ export default function ArtistComm() {
             <div className="w-full lg:w-1/2 px-4">
               <div className="max-w-lg">
                 <h2 className="text-4xl font-black mb-1">
-                  Full Body Commission
+                  Sample Commission
                 </h2>
                 <span className="block text-sm font-bold mb-5">Hanyonn</span>
                 <div className="flex items-center mb-4">
@@ -424,9 +424,8 @@ export default function ArtistComm() {
                 <h1 className="mt-8 text-3xl font-bold">✦ Hướng dẫn sử dụng</h1>
                 <p className="mt-4">
                   Cách thức hoạt động: Quy trình vận hành tác phẩm nghệ thuật
-                  của Hanyonn Commissions rất đơn giản và không rắc rối, đồng
-                  thời bạn được đảm bảo nhận lại tác phẩm nghệ thuật hoặc tiền
-                  của mình. <br />
+                  của Hanyonn Commissions rất đơn giản và không rườm rà, đồng
+                  thời bạn sẽ được đảm bảo nhận lại tác phẩm nghệ thuật chất lượng nhất . <br />
                   <h1 className="font-bold"> Bước 1: </h1>
                   Chọn những gì bạn muốn Artist của mình đưa vào Comm của bạn.{" "}
                   <br />
