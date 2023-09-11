@@ -12,7 +12,7 @@ function CarouselHome() {
     },
     {
       id: 2,
-      imgSrc: "/image/halfbody15.jp",
+      imgSrc: "/image/halfbody15.jpg",
       details: `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Eveniet aut atque quae voluptas corporis consectetur maxime ipsa
                 numquam, nesciunt reprehenderit facere harum a deleniti odio
