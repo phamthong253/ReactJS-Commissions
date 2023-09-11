@@ -107,6 +107,10 @@ function Collection() {
         ) : (
           <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
             <div className="-m-1 flex flex-wrap md:-m-2">
+              <hr className="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+            <span className="absolute w-60 px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
+              Artist Sample
+            </span>
               {sample.map((item) => (
               <div
               key={item.id}
