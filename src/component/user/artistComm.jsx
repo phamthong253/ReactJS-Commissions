@@ -424,9 +424,8 @@ export default function ArtistComm() {
                 <h1 className="mt-8 text-3xl font-bold">✦ Hướng dẫn sử dụng</h1>
                 <p className="mt-4">
                   Cách thức hoạt động: Quy trình vận hành tác phẩm nghệ thuật
-                  của Hanyonn Commissions rất đơn giản và không rắc rối, đồng
-                  thời bạn được đảm bảo nhận lại tác phẩm nghệ thuật hoặc tiền
-                  của mình. <br />
+                  của Hanyonn Commissions rất đơn giản và không rườm rà, đồng
+                  thời bạn sẽ được đảm bảo nhận lại tác phẩm nghệ thuật chất lượng nhất . <br />
                   <h1 className="font-bold"> Bước 1: </h1>
                   Chọn những gì bạn muốn Artist của mình đưa vào Comm của bạn.{" "}
                   <br />
