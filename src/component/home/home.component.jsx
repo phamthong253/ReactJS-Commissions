@@ -45,13 +45,13 @@ function Home() {
             <br />
             {auth ? (
               <Link to={"/create"}>
-                <button className="rounded-2xl text-center text-xl bg-purple-600 h-14 min-w-[15rem] text-white font-medium leading-10">
+                <button className="rounded-md text-center text-xl bg-violet-500 border-2 border-black h-14 min-w-[15rem] text-white font-medium leading-10">
                   Let&apos;s get started
                 </button>
               </Link>
             ) : (
               <Link to={"/signup"}>
-                <button className="rounded-2xl text-center text-xl bg-purple-600 h-14 min-w-[15rem] text-white font-medium leading-10">
+                <button className="rounded-md text-center text-xl bg-violet-500 border-2 border-black h-14 min-w-[15rem] text-white font-medium leading-10">
                   Let&apos;s get started
                 </button>
               </Link>
@@ -89,7 +89,7 @@ function Home() {
             </div>
             <Link to={"/artist"}>
               <div className="flex justify-center mx-auto">
-                <button className="rounded-2xl text-center text-xl bg-purple-600 h-14 min-w-[15rem] text-white font-medium leading-10">
+                <button className="rounded-2xl text-center text-xl bg-violet-500 border-2 border-black h-14 min-w-[15rem] text-white font-medium leading-10">
                   Choose your Artist
                 </button>
               </div>
@@ -129,7 +129,7 @@ function Home() {
                         hàng.
                       </p>
                       <Link to={"/artist"}>
-                        <button className="rounded-2xl my-5 text-center text-xl bg-purple-600 h-14 min-w-[10rem] text-white font-medium leading-10">
+                        <button className="rounded-2xl my-5 text-center text-xl bg-violet-500 border-2 border-black h-14 min-w-[10rem] text-white font-medium leading-10">
                           Show more
                         </button>
                       </Link>
@@ -165,7 +165,7 @@ function Home() {
                         số tiền bạn bỏ ra.
                       </p>
                       <Link to={"/gallery"}>
-                        <button className="rounded-2xl my-5 text-center text-xl bg-purple-600 h-14 min-w-[10rem] text-white font-medium leading-10">
+                        <button className="rounded-2xl my-5 text-center text-xl bg-violet-500 border-2 border-black h-14 min-w-[10rem] text-white font-medium leading-10">
                           Show more
                         </button>
                       </Link>
