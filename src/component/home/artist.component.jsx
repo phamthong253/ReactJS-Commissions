@@ -23,7 +23,7 @@ export default function Artist() {
           được hợp tác với bạn
         </p>
         <Link to={"/"}>
-          <button className="rounded-2xl my-5 text-center text-xl bg-purple-600 h-14 min-w-[10rem] text-white font-medium leading-10">
+          <button className="rounded-2xl my-5 text-center text-xl bg-violet-500 border-2 border-black font-black h-14 min-w-[10rem] text-white leading-10">
             Show more
           </button>
         </Link>
